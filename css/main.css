@@ -1,7 +1,6 @@
 body, html {
   font-family:Rockwell;
   text-decoration:none;
-  overflow:hidden;
   
 }
 
@@ -11,6 +10,7 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  overflow-y: scroll;
 }
 
 
