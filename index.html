@@ -7,64 +7,96 @@
   <title>tho homestay</title>
 	
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'/>
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'/>
   <link rel='stylesheet' href='css/main.css'/>
 	  
+<body>
+  <nav>
+    <ul id="menu">
+      <li><a href="#anchor1">Home</a></li>
+      <li><a href="#anchor2">About</a></li>      
+      <li><a href="#anchor3">Map</a></li>  
+    </ul>
+    <div class="mobile-bar" onclick="toggleMobileMenu();">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+	<div class="logo-container"></div>
+  </nav>
+  <script>
+    function toggleMobileMenu() {
+            document.querySelector('#menu').classList.toggle('active');      document.querySelector('.mobile-bar').classList.toggle('active');
+    }
+  </script>
 
-</head>
-
-
-<body style="background-color:black;">
-
-<div class="navbar navbar-default navbar-fixed-top" style="background-color:black; border-style:none;">
-	<div class="container">
-		<div class="navbar-brand"> Tho Homestay </div>
-		<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		</button>
-		
-		<div class="collapse navbar-collapse navHeaderCollapse">
-			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="https://thohomestay.github.io/">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="map.html">Map</a></li>
-			</ul>
-		
+  <div class="container container-1">
+    <a id="anchor1"></a>
+	  <div class="slides-container">
+		<div class="banner">
 		</div>
-	</div>
-</div>
+		<div class="slideshow"></div>
+	  </div>
+  </div>
 
-<div style="height:10vh;">
-</div>
+  <div class="container container-2">
+    <a id="anchor2"></a>
+    <div class="info-container">
+        <h1 class="welcome"> Welcome to Tho Homestay!</h1>
+        <ul class="info">
+          <li class="feature">-get back to nature</li>
+          <li class="feature">-experience life in a Tay village</li>
+          <li class="feature">-stay in a traditional bamboo home</li>
+          <li class="feature">-jungle hikes and waterfalls!</li>
+        </ul>
+    </div>
+  </div>
 
-<iframe frameBorder="0", width="100%", height="500", id=generic src="https://www.youtube.com/embed/i7XX6OI2zP4?rel=0&autoplay=1"></iframe>                                                                                          
+<!--<iframe frameBorder="0", width="100%", height="500", id=generic src="https://www.youtube.com/embed/i7XX6OI2zP4?rel=0&autoplay=1"></iframe>                                                                                          
+-->
+
+<div class="container container-3">
+  <a id="anchor3"></a>
+  <div class="map-container">
+    <h1 class="map-label"> As you can see, we're off the beaten path.</h1>
+    <iframe width="100%" height="1000" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=tho%20homestay%20ha%20giang%20vietnam+(Tho%20Homestay)&amp;t=h&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+  </div>
+</div>
 
 
 	
 
-<div class="copyright">
+<!-- <div class="copyright">
 	<div class="text-center" style="line-height:5vh;">
-		Filmed and edited by Felipe Espindola. Copyright &copy;  2017 Tho Homestay. Website by <a href="https://bmbaron.github.io/" target="_blank">Ben Baron</a>.
+		</a>.
 
 	</div>
 </div>
-
+ 
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
- 
+-->
+
+<footer>
+    <ul id="menu">
+<!--  <li>
+        <a href="#">Filmed and edited by Felipe Espindola. Copyright &copy;  2017 Tho Homestay.</a>
+      </li> -->
+      <li>
+        <a href="#">Website by Ben Baron</a>
+      </li>      
+    </ul>
+  </footer>
+
+  <script src='../scripts/main.js'></script>	
+
 </body>
 
 
-  
+  <!-- 
 	
 <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>	
-	
+	 -->
+
+
 </html>
