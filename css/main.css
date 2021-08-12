@@ -7,7 +7,7 @@
 }
 
 body, html {
-  font-family:Rockwell;
+  font-family: 'Cabin', sans-serif;
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
@@ -19,7 +19,7 @@ body, html {
 
 nav .logo-container {
   margin-left: auto;
-  top: 10px;
+  margin-top: -0.7rem;
   right: 2rem;
   background: url('../logos/thologosmall-nobg.png');
   background-size: cover;
@@ -37,6 +37,7 @@ nav {
   background: white;
   display: flex;
   z-index: 2;
+  max-height: 4.2rem;
 }
 
 nav ul {
@@ -81,7 +82,7 @@ nav ul li a:hover {
 .mobile-bar.active {
   background: darkcyan;
 }
-@media (max-width: 600px) {
+@media (max-width: 780px) {
   nav ul {
     opacity: 0;
     max-height: 0px;
@@ -89,7 +90,7 @@ nav ul li a:hover {
     visibility: none;
     display: hidden;
     position: absolute;
-    left:0; right:0; top:5rem;
+    left:0; right:0; top:4rem;
     margin-left: -100%;
     margin-top: 5%;
 }
@@ -145,14 +146,180 @@ nav ul li a:hover {
 
 
 .container-1 {
-  margin-top: 0rem;
+  margin-top: 4rem;
   margin-bottom: -6.5rem;
-  background: url('../images/top-main.png');
+/*   background: url('../images/top-main.png');
   background-repeat: none;
-  background-size: cover;
-  height: 130vh;
+  background-size: cover; */
+  height: auto;
+  max-height: 80vh;
   max-width: 100%;
 }
+
+.container-2 {
+  background-color: white;
+  text-align: center;
+  padding-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+
+
+.container-2 .info-container {
+  margin-top: 6rem;
+  background: white;
+  text-align: center;
+  border-radius: 20px;
+  height: auto;
+  width: 95vw;
+}
+
+.container-2 .welcome {
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  background: white;
+}
+
+.container-2 ul {
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  width: 90vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 780px) {
+
+  .container-2 .welcome {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .container-2 ul {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .container-2 ul div {
+    width: 80vw !important;
+    height: auto;
+    max-height: 42vh !important;
+    margin-bottom: 0;
+  }
+
+  .container-2 ul div h3 {
+    margin:0;
+    padding: 0;
+  }
+
+  .container-2 ul div h6 {
+    margin-top: -0.5rem !important;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .container-2 .info-container button {
+    width: auto;
+    min-width: 200px;
+  }
+}
+
+.container-2 ul div {
+  padding-top: 1rem;
+  flex-grow: 1;
+  margin: 1rem;
+  height: 15rem;
+  width: 35vw;
+  border-radius: 10px;
+ box-shadow: 5px 10px 18px #888888;
+}
+
+.container ul div img {
+  margin: 0;
+}
+.container ul div h3 {
+  margin: 0;
+}
+.container ul div h6 {
+  margin: 0;
+  margin-top: 10px;
+  padding: 10px;
+  font-weight:lighter;
+}
+
+.container-2 .info-container button {
+  color: white;
+  width: auto;
+  height: 3.5rem;
+  background: #fec107;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+  font-size: 1.5rem;
+}
+
+.container-2 .info-container button:hover {
+  background: #ffd658;
+}
+
+.container-3 {
+  margin-top: -2rem;
+  background: white;
+  height: 60vh;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.container-3 .contact-label {
+  text-align: center;
+  margin-top: 4rem;
+  width: 300px;
+  background: black;
+  margin: 0 auto;
+}
+
+
+.container-3 .contact-container {
+  width:100%;
+  height: 90%;
+  text-align: center;
+  margin: auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.container-3 .icons {
+  flex-grow: 0.5;
+  background: red;
+}
+
+
+.container-3 .map {
+  flex-grow: 0.5;
+  align-content: space-between;
+  
+}
+
+.container-3 .map iframe {
+  height: 100%;
+  width: 30vw;
+}
+
 
 /*
 .container-1 .slides-container {
@@ -192,7 +359,7 @@ nav ul li a:hover {
   background: white;
   opacity: 0.7;
 } */
-
+/* 
 @media (max-width: 760px) {
   .container-1 .slides-container .banner {
     font-size: 2rem;
@@ -286,7 +453,7 @@ nav ul li a:hover {
 .container-3 .map-container iframe {
   width: 100%;
   height: 85%
-}
+} */
 
 
 /* FOOTER */
