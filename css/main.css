@@ -160,7 +160,7 @@ nav ul li a:hover {
   background-color: white;
   text-align: center;
   padding-top: 1rem;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
 }
 
 
@@ -171,7 +171,7 @@ nav ul li a:hover {
   text-align: center;
   border-radius: 20px;
   height: auto;
-  width: 95vw;
+  width: 100%;
 }
 
 .container-2 .welcome {
@@ -179,29 +179,45 @@ nav ul li a:hover {
   text-align: center;
   margin: 1rem;
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: -0.5rem;
   background: white;
 }
 
+.stars {
+  width: auto;
+}
+
+.stars:not(:checked) > input {
+  visibility: hidden;
+}
+
+.stars:not(:checked) > label:before {
+  margin-left: -30px;
+  font-size:60px;
+  content: '★ ';
+  color: #c59b08;
+  visibility: visible;
+}
+
 .container-2 ul {
+  margin-top: 2rem;
   text-align: center;
   padding-top: 1rem;
   font-size: 1.5rem;
-  margin: 0;
   padding: 0;
   width: 90vw;
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   display: flex;
   flex-direction: row;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 850px) {
 
   .container-2 .welcome {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 0;
   }
 
@@ -224,7 +240,6 @@ nav ul li a:hover {
   }
 
   .container-2 ul div h6 {
-    margin-top: -0.5rem !important;
     padding-bottom: 0;
     margin-bottom: 0;
     padding: 0;
@@ -239,7 +254,7 @@ nav ul li a:hover {
 .container-2 ul div {
   padding-top: 1rem;
   flex-grow: 1;
-  margin: 1rem;
+  margin: 0.5rem;
   height: 15rem;
   width: 35vw;
   border-radius: 10px;
@@ -272,53 +287,154 @@ nav ul li a:hover {
 
 .container-2 .info-container button:hover {
   background: #ffd658;
+  cursor: pointer;
 }
 
 .container-3 {
   margin-top: -2rem;
   background: white;
-  height: 60vh;
-  width: 90vw;
-  margin: 0 auto;
+  height: auto;
+  width: 100%;
+  margin-left: 0;
+  text-align: center;
+  margin-bottom: 10rem;
 }
 
-.container-3 .contact-label {
+.container-3 .label-box {
+  display:inline-block;
   text-align: center;
-  margin-top: 4rem;
-  width: 300px;
-  background: black;
+  background: white;
   margin: 0 auto;
+  margin-top: 40px;
 }
 
 
 .container-3 .contact-container {
   width:100%;
-  height: 90%;
+  height: 100%;
   text-align: center;
   margin: auto;
-  margin-top: 2rem;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  padding: 4rem;
 }
 
-.container-3 .icons {
-  flex-grow: 0.5;
-  background: red;
+.container-3 .pictureTho {
+  flex: 1 1 0px;
 }
 
+.container-3 .headshot {
+  height: auto;
+  width: 70%;
+  border-radius: 10px;
+}
 
 .container-3 .map {
-  flex-grow: 0.5;
-  align-content: space-between;
-  
+  flex: 1 1 0px;
+}
+.container-3 .map h2{
+  width: 80%;
+  margin-left: 10%;
 }
 
 .container-3 .map iframe {
-  height: 100%;
-  width: 30vw;
+  height: 50%;
+  width: 70%;
+  flex-grow: 1;
+  border-radius: 10px;
 }
+
+.container-3 .details {
+  margin-top: -1rem;
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container-3 ul {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container-3 ul li {
+  padding: 0 10px;
+  width: 80%;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+.container-3 ul a {
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: white;
+}
+
+.container-3 ul a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+.container-3 ul a span {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  line-height: 3rem;
+  vertical-align: top;
+}
+
+.container ul li:first-child {
+  background: rgb(216, 51, 166);
+}
+.container ul li:first-child:hover {
+}
+.container ul li:nth-child(2) {
+  background: rgb(94, 78, 238);
+}
+.container ul li:nth-child(2):hover {
+  opacity: 0.7;
+}
+.container ul li:nth-child(3) {
+  background: #ee4e4e;
+}
+.container ul li:nth-child(3) a span {
+  font-size: 1rem;
+}
+.container ul li:nth-child(4) {
+  background: #4eee5b;
+}
+.container-3 ul li:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 780px) {
+
+  .container-3 {
+    height: auto !important;
+  }
+  .container-3 .contact-container {
+    flex-direction: column;
+  }
+  .container-3 .map {
+    margin-top: 2rem;
+  }
+  .container-3 .map iframe {
+    height: 20rem;
+  }
+  .container-3 h2 {
+    margin-top: 2rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .container ul li a {
+    font-size: 1.5rem;
+  }
+  .container ul li a span {
+    font-size: 1rem;
+  }
+
+}
+
 
 
 /*
