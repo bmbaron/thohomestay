@@ -1,13 +1,21 @@
 let images = [
-    '../images/c.jpg',
-    '../images/d.jpg',
-    '../images/e.jpg',
-    '../images/f.jpg',
-    '../images/g.jpg',
-    '../images/h.jpg',
+    '../images/1.png',
+    '../images/2.png',
+    '../images/5.jpg',
+    '../images/4.png',
+    '../images/3.png',
+    '../images/6.png',
 ];
 
 let mainImage = '../images/top-main.png';
+
+let photos = document.getElementsByClassName("examples");
+for (let i = 0; i < photos.length; i++) {
+    photos[i].src = images[i];
+}
+
+
+
 
 let imageCounter = 0;
 

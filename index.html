@@ -9,15 +9,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel='stylesheet' href='css/main.css'/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
   </style>
 <body>
   <nav>
+    <a id="anchor1" class="top"></a>
     <ul id="menu">
-      <li><a href="#anchor1">Home</a></li>
+      <li><a href="#">Home</a></li>
       <li><a href="#anchor2">About</a></li>      
-      <li><a href="#anchor3">Map</a></li>  
+      <li><a href="#anchor3">Photos</a></li>      
+      <li><a href="#anchor5">Map</a></li>  
     </ul>
     <div class="mobile-bar" onclick="toggleMobileMenu();">
       <span></span>
@@ -31,13 +35,61 @@
             document.querySelector('#menu').classList.toggle('active');      document.querySelector('.mobile-bar').classList.toggle('active');
     }
   </script>
-
   <img class="container-1" src="../images/top-main2.png" width="2500" height="1174">
-
+  
+  <a id="anchor2" class="top"></a>
   <div class="container container-2">
-    <a id="anchor2"></a>
     <div class="info-container">
-        <h2 class="welcome">What our guests are saying</h2>
+        <h1 class="welcome">Welcome to Tho Homestay!</h1>
+        <ul class="activities">
+          <li class="activity">
+            <span class="material-icons-outlined md-64">
+            two_wheeler
+            </span>
+            <p>getting here is part of the fun!</p>
+            <span class="material-icons-outlined md-64">
+              night_shelter
+            </span>
+            <p>sleep in a traditional Tay minority home</p>
+          </li>
+          <li class="activity">
+            <span class="material-icons-outlined md-64">
+              landscape
+            </span>
+            <p>explore jungles, mountains, waterfalls</p>
+            <span class="material-icons-outlined md-64">
+              ramen_dining
+            </span>
+            <p>enjoy tasty and unique local cuisine</p> 
+          </li>
+        </ul>
+
+    </div>
+  </div>
+  <div class="container container-3">
+    <a id="anchor3" class="top"></a>
+    <div class="info-container">
+        <h1 class="welcome">get back to nature in northern Vietnam</h1>
+        <ul class="photos">
+          <li class="photo">
+            <img src="" alt="" class="examples">
+            <img src="" alt="" class="examples">
+          </li>
+          <li class="photo">
+            <img src="" alt="" class="examples">
+            <img src="" alt="" class="examples">
+          </li>
+          <li class="photo">
+            <img src="" alt="" class="examples">
+            <img src="" alt="" class="examples">
+          </li>
+        </ul>
+    </div>
+  </div>
+  <div class="container container-4">
+    <a id="anchor4" class="top"></a>
+    <div class="info-container">
+        <h1 class="welcome">What our guests are saying</h1>
         <div class="stars" id="stars">
           <input type="radio" id="a1" name="rate"/>
           <label for="a1"></label>
@@ -59,17 +111,16 @@
     </div>
   </div>
 
-  <div class="container container-3">
-    <!-- <a id="anchor3"></a> -->
+  <div class="container container-5">
+    <a id="anchor5" class="top"></a>
     <div class="label-box">
       <h1 class="contact-label">ways to contact us</h1>
     </div>
-
     <div class="contact-container">
       <div class="pictureTho">
         <img class="headshot" src="../images/ongtho2.png"/>
         <div class="details">
-          <h2>Mr. Tho (Ông Thổ), owner of Tho Homestay</h2>
+          <h2>Grandpa Tho (Ông Thổ), owner of Tho Homestay</h2>
           <ul class="social">
             <li>
               <a href="https://www.instagram.com/thohomestay/" class="fa fa-instagram"><span>@thohomestay</span></a>
@@ -88,23 +139,7 @@
       </div>
       <div class="map">
         <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?hl=en&amp;q=tho%20homestay%20ha%20giang%20vietnam+(Tho%20Homestay)&amp;t=h&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-        <div class="details">
-          <h2>Book today on these sites!</h2>
-          <ul class="social">
-            <li>
-              <a href="https://www.instagram.com/thohomestay/" class="fa fa-instagram"><span>@thohomestay</span></a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/thohomestay" class="fa fa-facebook"><span>@thohomestay</span></a>
-            </li>
-            <li>
-              <a href="mailto:thohomestay@gmail.com" class="fa fa-envelope-o"><span>thohomestay@gmail.com</span></a>
-            </li>
-            <li>
-              <a href="https://wa.me/841674535268" class="fa fa-whatsapp"><span>+84 1674535268</span></a>
-            </li>
-          </ul>
-        </div>
+        <img class="logo" src="../logos/thologobig.jpg"/>
       </div>
     </div>
   </div>
@@ -134,7 +169,8 @@
   <footer>
     <ul id="menu">
       <li>
-        <a href="#">Website by Ben Baron</a>
+        <p>copyright 2021 Tho Homestay</p>
+        <a href="github.com/bmbaron">website by @bmbaron</a>
       </li>      
     </ul>
   </footer>
