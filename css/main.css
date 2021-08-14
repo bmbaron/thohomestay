@@ -431,7 +431,6 @@ nav ul li a:hover {
   width: 70%;
   flex-grow: 1;
   border-radius: 10px;
-  margin-bottom: 1rem;
 }
 
 .container-5 .details {
@@ -535,6 +534,7 @@ nav ul li a:hover {
   height: auto;
   width: 70%;
   border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
 
