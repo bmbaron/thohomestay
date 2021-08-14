@@ -1,10 +1,10 @@
 let images = [
-    '../images/1.png',
-    '../images/2.png',
-    '../images/5.jpg',
-    '../images/4.png',
-    '../images/3.png',
-    '../images/6.png',
+    '../thohomestay/images/1.png',
+    '../thohomestay/images/2.png',
+    '../thohomestay/images/5.jpg',
+    '../thohomestay/images/4.png',
+    '../thohomestay/images/3.png',
+    '../thohomestay/images/6.png',
 ];
 
 let mainImage = '../images/top-main.png';
