@@ -445,7 +445,11 @@ nav ul li a:hover {
   list-style: none;
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
   margin-top: 2rem;
+=======
+  margin-top: 1rem;
+>>>>>>> b90444dd22ff5bb8d2d460db0747a84582ccf716
 }
 
 .container-5 ul li {
