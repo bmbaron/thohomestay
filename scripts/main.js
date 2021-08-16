@@ -22,16 +22,21 @@ const leftReview = Object.create(review);
 leftReview.content = "&quot;If you want to experience something really local and the kindness of the Vietnamese, don't miss out on this beautiful experience!&quot;";
 leftReview.name = "Jordane G.";
 leftReview.photo = "https://raw.githubusercontent.com/bmbaron/thohomestay/master/images/reviewers/jordane.png";
+leftReview.photo.alt = "reviewer Jordane G.";
 
 const centerReview = Object.create(review);
 centerReview.content = "&quot;The homestay is absolutely great, the hospitality, food, cleanliless everything exceeded our expections.&quot;";
 centerReview.name = "Trinh S.";
 centerReview.photo = "https://raw.githubusercontent.com/bmbaron/thohomestay/master/images/reviewers/trinh.png";
+centerReview.photo.alt = "reviewer Trinh S.";
+
 
 const rightReview = Object.create(review);
 rightReview.content = "&quot;A truly authentic experience. The family is lovely and really look after you. Get there before tourism kicks in.&quot;";
 rightReview.name = "Loretta I.";
-rightReview.photo = "https://raw.githubusercontent.com/bmbaron/thohomestay/master/images/reviewers/loretta.png";
+rightReview.photo = "https://raw.githubusercontent.com/bmbaron/thohomestay/master/images/reviewers";
+rightReview.photo.alt = "reviewer Loretta I.";
+
 
 const reviewObjects = [leftReview,centerReview,rightReview];
 

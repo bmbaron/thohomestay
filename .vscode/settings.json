@@ -1,0 +1,12 @@
+{
+    "diffEditor.wordWrap": "on",
+    "editor.wordWrap": "on",
+    "liveServer.settings.ignoreFiles": [
+
+        ".vscode/**",
+        "**/*.scss",
+        "**/*.sass",
+        "**/*.ts"
+    ],
+    "liveServer.settings.fullReload": true
+}
