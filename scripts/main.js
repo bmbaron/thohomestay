@@ -1,10 +1,10 @@
 let images = [
-    '../thohomestay/images/1.png',
-    '../thohomestay/images/2.png',
-    '../thohomestay/images/5.jpg',
-    '../thohomestay/images/4.png',
-    '../thohomestay/images/3.png',
-    '../thohomestay/images/6.png',
+    'https://raw.githubusercontent.com/bmbaron/thohomestay/master/images/1.png',
+    'https://raw.githubusercontent.com/bmbaron/thohomestay/master/images/2.png',
+    'https://raw.githubusercontent.com/bmbaron/thohomestay/master/images/5.jpg',
+    'https://raw.githubusercontent.com/bmbaron/thohomestay/master/images/4.png',
+    'https://raw.githubusercontent.com/bmbaron/thohomestay/master/images/3.png',
+    'https://raw.githubusercontent.com/bmbaron/thohomestay/master/images/6.png',
 ];
 
 let photos = document.getElementsByClassName("examples");
@@ -21,17 +21,17 @@ const review = {
 const leftReview = Object.create(review);
 leftReview.content = "&quot;If you want to experience something really local and the kindness of the Vietnamese, don't miss out on this beautiful experience!&quot;";
 leftReview.name = "Jordane G.";
-leftReview.photo = "../thohomestay/images/reviewers/jordane.png";
+leftReview.photo = "https://raw.githubusercontent.com/bmbaron/thohomestay/master/images/reviewers/jordane.png";
 
 const centerReview = Object.create(review);
 centerReview.content = "&quot;The homestay is absolutely great, the hospitality, food, cleanliless everything exceeded our expections.&quot;";
 centerReview.name = "Trinh S.";
-centerReview.photo = "../thohomestay/images/reviewers/trinh.png";
+centerReview.photo = "https://raw.githubusercontent.com/bmbaron/thohomestay/master/images/reviewers/trinh.png";
 
 const rightReview = Object.create(review);
 rightReview.content = "&quot;A truly authentic experience. The family is lovely and really look after you. Get there before tourism kicks in.&quot;";
 rightReview.name = "Loretta I.";
-rightReview.photo = "../thohomestay/images/reviewers/loretta.png";
+rightReview.photo = "https://raw.githubusercontent.com/bmbaron/thohomestay/master/images/reviewers/loretta.png";
 
 const reviewObjects = [leftReview,centerReview,rightReview];
 

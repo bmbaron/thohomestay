@@ -22,7 +22,7 @@ nav .logo-container {
   margin-left: auto;
   margin-top: -0.7rem;
   right: 2rem;
-  background: url('../thohomestay/logos/thologosmall-nobg.png');
+  background: url('https://raw.githubusercontent.com/bmbaron/thohomestay/master/logos/thologosmall-nobg.png');
   background-size: cover;
   height: 60px;
   width: 70px;
