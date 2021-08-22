@@ -149,7 +149,7 @@ nav ul li a:hover {
 
 .container-1 {
   margin-top: 4rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   height: auto;
   max-height: 80vh;
   max-width: 100%;
@@ -164,6 +164,7 @@ nav ul li a:hover {
 .container-2 h1 {
   margin: 0 auto;
   margin-bottom: 2rem;
+  font-size: 3rem;
 }
 .container-2 ul li {
   text-decoration: none;
@@ -171,7 +172,7 @@ nav ul li a:hover {
 }
 
 .container-2 .activities {
-  width: 80%;
+  width: 60%;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
@@ -233,6 +234,12 @@ nav ul li a:hover {
 @media (max-width: 850px) {
   .container-3 .photo {
     width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .container-3 .photo {
+    width: 100%;
   }
 }
 
@@ -344,6 +351,13 @@ nav ul li a:hover {
   box-shadow: 5px 10px 18px #888888;
 }
 
+.container-4 .info div:hover {
+  transition: 1s ease all;
+  transform: scale(1.05);
+  z-index: 999;
+}
+
+
 .container-4 .info div img {
   margin: 0;
 }
@@ -409,6 +423,7 @@ nav ul li a:hover {
   height: auto;
   width: 70%;
   border-radius: 10px;
+  box-shadow: 5px 10px 18px #888888;
 }
 
 .container-5 .map {
@@ -424,6 +439,7 @@ nav ul li a:hover {
   width: 70%;
   flex-grow: 1;
   border-radius: 10px;
+  box-shadow: 5px 10px 18px #888888;
 }
 
 .container-5 .details {
@@ -446,6 +462,7 @@ nav ul li a:hover {
   width: 80%;
   border-radius: 10px;
   margin: 20px auto;
+  box-shadow: 5px 10px 18px #888888;
 }
 
 .container-5 ul a {
@@ -506,6 +523,7 @@ nav ul li a:hover {
     height: 400px;
     width: 70%;
     border-radius: 10px;
+    box-shadow: 5px 10px 18px #888888;
   }
   .container-5 h2 {
     margin-top: 2rem;
@@ -529,11 +547,8 @@ nav ul li a:hover {
   width: 70%;
   border-radius: 10px;
   margin-bottom: 1rem;
+  box-shadow: 5px 10px 18px #888888;
 }
-
-
-
-
 
 /* FOOTER */
 
